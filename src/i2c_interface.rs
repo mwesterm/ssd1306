@@ -18,7 +18,7 @@ impl I2CDisplayInterface {
         Self::new_custom_address(i2c, 0x3C)
     }
     #[cfg(feature = "async")]
-    #[allow(clippy::new_ret_no_self)]
+    #[allow(clippy::new_ret_noself)]
     /// Create a new async I2C interface with the address 0x3D
     pub fn new<I>(i2c: I) -> I2CInterface<I>
     where
